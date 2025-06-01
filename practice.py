@@ -1,13 +1,7 @@
-def menu(**kwargs):
-   # print(kwargs)
-  for k, v in kwargs.items():
-      print(k, v)
+def outer(a, b):
+    def plus(c, d):
+        return c + d
 
-
-d = {
-    'entree': 'beef',
-    'drink': 'ice coffe',
-    'desert': 'ice'
-}
-
-menu(**d)
+    r = plus(a, b)
+    print(r)
+outer(1,2)
