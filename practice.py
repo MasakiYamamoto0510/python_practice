@@ -1,7 +1,4 @@
-while True:
-    word = input('Enter:')
-    if word == 'ok':
+for word in ['My', 'name', 'is', 'Mike']:
+    if word == 'name':
         break
-        print('next')
-
-
+    print(word)
