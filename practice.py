@@ -1,4 +1,6 @@
-for word in ['My', 'name', 'is', 'Mike']:
-    if word == 'name':
-        break
-    print(word)
+for fruit in ['apple', 'banana', 'orange']:
+    print(fruit)
+
+else:
+    print('I ate all!')
+
