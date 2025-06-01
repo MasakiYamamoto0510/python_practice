@@ -1,6 +1,9 @@
-days = ['Mon', 'Tue', 'Wed']
-fruits = ['apple', 'banana', 'orange']
-drinks = ['coffe', 'tea', 'beer']
+d = {'x': 100, 'y': 200}
 
-for day, fruit, drink in zip(days, fruits, drinks):
-    print(day, fruit, drink)
+for k, v in d.items():
+    print(k, ':', v)
+
+d2 = {'z': 1000, 'a': 2000}
+
+for k, v in d2.items():
+    print(k, ':', v)
