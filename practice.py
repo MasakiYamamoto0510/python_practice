@@ -1,7 +1,12 @@
-def outer(a, b):
-    def plus(c, d):
-        return c + d
+l = ['Mon', 'tue', 'Wed', 'thu', 'Fri', 'sat', 'Sun']
 
-    r = plus(a, b)
-    print(r)
-outer(1,2)
+def change_words(words, func):
+    for word in words :
+        print(func(word))
+
+# def sample_func(word):
+#     return word.capitalize()
+
+sample_func = lambda word: word.capitalize()
+
+change_words(l, sample_func)
