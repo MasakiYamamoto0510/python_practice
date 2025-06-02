@@ -1,12 +1,10 @@
-l = ['Mon', 'tue', 'Wed', 'thu', 'Fri', 'sat', 'Sun']
+t = (1,2,3,4,5)
+r = []
+for i in t :
+    if i % 2 == 0:
+      r.append(i)
 
-def change_words(words, func):
-    for word in words :
-        print(func(word))
+print(r)
 
-# def sample_func(word):
-#     return word.capitalize()
-
-sample_func = lambda word: word.capitalize()
-
-change_words(l, sample_func)
+r = [i for i in t if i % 2 == 0]
+print(r)
