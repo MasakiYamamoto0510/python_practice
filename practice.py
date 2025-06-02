@@ -1,41 +1,15 @@
-w = ['mon', 'tue', 'wed']
-f = ['coffe', 'milk', 'water']
+l = [1, 2, 3]
+i = 5
+del l
 
-d = {}
-for x, y in zip(w, f):
-    d[x] = y
 
-print(d)
-
-d = {x: y for x, y in zip(w, f)}
-print(d)
-
-s = set()
-for i in range(10):
-    s.add(i)
-
-print(s)
-
-s = {i for i in range(10)}
-print(s)
-
-def g():
-    for i in range(10):
-        yield i
-
-g = g()
-print(type(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
-
-g = (i for i in range(10))
-
-print(next(g))
-print(next(g))
-print(next(g))
-print(next(g))
+try:
+    l[i]
+except IndexError as ex:
+    print("Don't worry: {}".format(ex))
+except NameError as ex:
+    print(ex)
+else :
+    print('done')
+finally :
+    print('clean up')

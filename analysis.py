@@ -25,3 +25,17 @@ plt.ylabel("売上(合計)")
 plt.tight_layout()
 plt.show()
 
+# 月毎の売上合計を計算
+month_sum  = df.groupby("month")["sales"].sum()
+
+#結果を表示
+print("月別売上合計:")
+print(month_sum)
+
+# 折れ線グラフで描画
+month_sum.plot(kind="line", marker="o", title="月別売上推移")
+plt.xlabel("月")
+plt.ylabel("売上（合計）")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
