@@ -1,10 +1,41 @@
-t = (1,2,3,4,5)
-r = []
-for i in t :
-    if i % 2 == 0:
-      r.append(i)
+w = ['mon', 'tue', 'wed']
+f = ['coffe', 'milk', 'water']
 
-print(r)
+d = {}
+for x, y in zip(w, f):
+    d[x] = y
 
-r = [i for i in t if i % 2 == 0]
-print(r)
+print(d)
+
+d = {x: y for x, y in zip(w, f)}
+print(d)
+
+s = set()
+for i in range(10):
+    s.add(i)
+
+print(s)
+
+s = {i for i in range(10)}
+print(s)
+
+def g():
+    for i in range(10):
+        yield i
+
+g = g()
+print(type(g))
+print(next(g))
+print(next(g))
+print(next(g))
+print(next(g))
+print(next(g))
+print(next(g))
+print(next(g))
+
+g = (i for i in range(10))
+
+print(next(g))
+print(next(g))
+print(next(g))
+print(next(g))
