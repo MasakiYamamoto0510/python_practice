@@ -1,7 +1,14 @@
-from lesson_package.talk import *
+# from lesson_package.talk import *
+#
+# print(animal.sing())
+# print(animal.cry())
+#
+# print(human.sing())
+# print(human.cry())
 
-print(animal.sing())
-print(animal.cry())
+try:
+  from lesson.package import tools
+except ImportError:
+    from lesson_package.tools import utils
 
-print(human.sing())
-print(human.cry())
+utils.say_twice('word')
